@@ -1,0 +1,113 @@
+# paths and file names
+#------------------------------- 
+out_dir                 output/FullSmash
+evtsel_out_prefix       evtsel_smash
+hypsel_out_prefix       hypsel_smash
+anagram_out_prefix      anagram_smash
+drawhist_out_prefix     histograms_smash
+
+# EvtSelection
+#-------------------------------
+# PID (pick one)
+use_jana_pid            1
+use_bad_banana_pid      0
+
+# reaction (pick one)
+inclS                   1
+pKS                     0
+nKPiSig                 0
+pPPiSig                 0
+
+# event clean-up 
+check_event_header      1
+trigger_pt1             0
+trigger_pt2             0
+trigger_pt3             1
+start_hit               -1
+
+# track selection
+use_flag_Hadron         1
+use_flag_kIsUsed        1
+reject_flag_kIsLeption  1
+
+# corrections
+energy_correction       1
+beam_correction         1
+#-------------------------------
+
+# HypSelection
+#-------------------------------
+loop_resonace_search    1
+
+# event criteria (pick one)
+loop_inclusive          0 #Not implemented
+loop_pseudo_inclusice   1
+
+# primary particle source (pick one)
+all_positive_tracks     1
+pid_positive_tracks     0
+
+# sim track QA (does nothing for data)
+check_MC_true           0
+
+# selection cuts
+prim_particle_cuts      1
+lambda_cuts             1
+sigma_cuts              1
+
+# AnaGram 
+#-------------------------------
+ignore_FS_reco          0
+ignore_hyp_reco         0
+ignore_MC               0     
+
+# Analyze status (MC flags do nothing for data)
+hyp_reco_accepted       1
+prim_gen_MC             1 
+true_reco_MC            1
+
+# DrawHist 
+#-------------------------------
+tune_cuts               0
+frac_cut_tuning         0.95
+
+
+#-------------------------------
+# Cut values (in Hypsel) 
+#-------------------------------
+# info: Optimized cuts to 95% signal acceptance: 16-11-2025 on FullSmash (jana PID, positive track). 
+#-------------------------------
+ff_lambda_cuts_tuned_prim_vtx_z_min   -339.36
+ff_lambda_cuts_tuned_prim_vtx_z_max   46.52
+ff_lambda_cuts_tuned_dec_vtx_z_min   -145
+ff_lambda_cuts_tuned_track_dist_max   24.5
+ff_lambda_cuts_tuned_lambda_point_vec_min   -9
+ff_lambda_cuts_tuned_PVA_max   0.28
+ff_lambda_cuts_tuned_vtx_dist_min   5.5
+ff_sigma_cuts_tuned_missing_mass_min   1371.95
+fh_lambda_cuts_tuned_prim_vtx_z_min   -166.71
+fh_lambda_cuts_tuned_prim_vtx_z_max   -79.91
+fh_lambda_cuts_tuned_dec_vtx_z_min   -142
+fh_lambda_cuts_tuned_track_dist_max   21.5
+fh_lambda_cuts_tuned_lambda_point_vec_min   -1.5
+fh_lambda_cuts_tuned_PVA_max   0.24
+fh_lambda_cuts_tuned_vtx_dist_min   4
+fh_sigma_cuts_tuned_missing_mass_min   1551.95
+hf_lambda_cuts_tuned_prim_vtx_z_min   -164.5
+hf_lambda_cuts_tuned_prim_vtx_z_max   -88.36
+hf_lambda_cuts_tuned_dec_vtx_z_min   -142
+hf_lambda_cuts_tuned_track_dist_max   22.5
+hf_lambda_cuts_tuned_lambda_point_vec_min   -1.5
+hf_lambda_cuts_tuned_PVA_max   0.22
+hf_lambda_cuts_tuned_vtx_dist_min   4
+hf_sigma_cuts_tuned_missing_mass_min   1101.95
+hh_lambda_cuts_tuned_prim_vtx_z_min   -152
+hh_lambda_cuts_tuned_prim_vtx_z_max   -95.9
+hh_lambda_cuts_tuned_dec_vtx_z_min   -139
+hh_lambda_cuts_tuned_track_dist_max   17.5
+hh_lambda_cuts_tuned_lambda_point_vec_min   -1
+hh_lambda_cuts_tuned_PVA_max   0.14
+hh_lambda_cuts_tuned_vtx_dist_min   4
+hh_sigma_cuts_tuned_missing_mass_min   1521.95
+prim_particle_cuts_tuned_z_min   -159.9
+prim_particle_cuts_tuned_z_max   -89.6

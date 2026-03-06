@@ -1,0 +1,138 @@
+# paths and file names
+#------------------------------- 
+out_dir                 output/FullSmash
+evtsel_out_prefix       evtsel_smash
+hypsel_out_prefix       hypsel_smash
+anagram_out_prefix      anagram_smash
+drawhist_out_prefix     histograms_smash
+
+# EvtSelection
+#-------------------------------
+#reaction (pick one)
+inclS                   1
+pKS                     0
+nKPiSig                 0
+pPPiSig                 0
+
+# event clean-up 
+check_event_header      1
+trigger_pt1             0
+trigger_pt2             0
+trigger_pt3             1
+start_hit               2
+
+# track selection
+use_flag_Hadron         1
+use_flag_kIsUsed        1
+reject_flag_kIsLeption  1
+use_tcut_pid            1
+p_cut_file              Proton_Cut_file.root
+pi_cut_file             Pion_Cut_file.root
+k_cut_file              Kaon_Cut_file.root
+
+# corrections
+energy_correction       1
+beam_correction         1
+#-------------------------------
+
+# HypSelection
+#-------------------------------
+loop_resonace_search    0
+
+# event criteria (pick one)
+loop_inclusive          0 #Not implemented
+loop_pseudo_inclusice   1
+
+# primary particle source (pick one)
+all_positive_tracks     1
+pid_positive_tracks     0
+
+# sim track QA (does nothing for data)
+check_MC_true           0
+
+# selection cuts
+prim_particle_cuts      1
+lambda_cuts             1
+sigma_cuts              1
+
+# AnaGram 
+#-------------------------------
+ignore_FS_reco          0
+ignore_hyp_reco         0
+ignore_MC               0     
+
+# Analyze status (MC flags do nothing for data)
+hyp_reco_accepted       1
+prim_gen_MC             1 
+true_reco_MC            1
+
+# DrawHist 
+#-------------------------------
+tune_cuts               1
+
+#-------------------------------
+# Cut values (in Hypsel) 
+#-------------------------------
+# info: tuned from SMASH w. 46 
+#-------------------------------
+
+prim_particle_R_min     -150
+prim_particle_R_max      150 
+prim_particle_z_min     -160
+prim_particle_z_max     -80
+
+hh_lambda_tuned_lambda_mass_window_min  1109.55   
+hh_lambda_tuned_lambda_mass_window_max  1120.11
+hh_lambda_tuned_lambda_point_vec_min   3
+hh_lambda_tuned_vtx_dist_min   35
+hh_lambda_tuned_dec_vtx_z_min   -88
+hh_lambda_tuned_track_dist_max   23
+hh_lambda_tuned_prim_vtx_z_min   -219.6   
+hh_lambda_tuned_prim_vtx_z_max   -84.24
+hh_lambda_pva_max   0.5
+
+hf_lambda_tuned_lambda_mass_window_min   1107.9   
+hf_lambda_tuned_lambda_mass_window_max 1120.77
+hf_lambda_tuned_lambda_point_vec_min   3
+hf_lambda_tuned_vtx_dist_min   30
+hf_lambda_tuned_dec_vtx_z_min   -88
+hf_lambda_tuned_track_dist_max   34
+hf_lambda_tuned_prim_vtx_z_min   -177.3   
+hf_lambda_tuned_prim_vtx_z_max  51.12
+hf_lambda_pva_max 0.5
+
+fh_lambda_tuned_lambda_mass_window_min   1109.55   
+fh_lambda_tuned_lambda_mass_window_max   1119.45
+fh_lambda_tuned_lambda_point_vec_min   3
+fh_lambda_tuned_vtx_dist_min   40
+fh_lambda_tuned_dec_vtx_z_min   -88
+fh_lambda_tuned_track_dist_max   30
+fh_lambda_tuned_prim_vtx_z_min   -558   
+fh_lambda_tuned_prim_vtx_z_max   279.54
+fh_lambda_pva_max 0.5
+
+ff_lambda_tuned_lambda_mass_window_min   1107.9   
+ff_lambda_tuned_lambda_mass_window_max   1120.44
+ff_lambda_tuned_lambda_point_vec_min   3
+ff_lambda_tuned_vtx_dist_min   30
+ff_lambda_tuned_dec_vtx_z_min   -88
+ff_lambda_tuned_track_dist_max   34
+ff_lambda_tuned_prim_vtx_z_min   -338.04   
+ff_lambda_tuned_prim_vtx_z_max   194.94
+ff_lambda_pva_max 0.5
+
+hh_sigma_tuned_sigma_mass_window_min   1169.75   
+hh_sigma_tuned_sigma_mass_window_max   1210.05
+hh_sigma_tuned_missing_mass_min   1881.95
+
+hf_sigma_tuned_sigma_mass_window_min   1167.15   
+hf_sigma_tuned_sigma_mass_window_max 1215.25
+hf_sigma_tuned_missing_mass_min   2121.95
+
+fh_sigma_tuned_sigma_mass_window_min   1165.2   
+fh_sigma_tuned_sigma_mass_window_max 1212.65
+fh_sigma_tuned_missing_mass_min   1911.95
+
+ff_sigma_tuned_sigma_mass_window_min   1165.85  
+ff_sigma_tuned_sigma_mass_window_max 1216.55
+ff_sigma_tuned_missing_mass_min   2121.95
