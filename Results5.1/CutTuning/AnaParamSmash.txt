@@ -1,0 +1,155 @@
+# paths and file names
+#------------------------------- 
+out_dir                 output/FullSmash
+evtsel_out_prefix       evtsel_smash
+hypsel_out_prefix       hypsel_smash
+anagram_out_prefix      anagram_smash
+drawhist_out_prefix     histograms_smash
+
+# efficiency correction
+do_eff_corr            1
+eff_corr_file          EfficencyMap_test.root
+eff_corr_splot         eff_corr_mc
+eff_corr_hist          pt_vs_rapidity
+eff_corr_fill_mc_true  0
+
+# mass-constrained KinFit
+use_mass_kin_fit         1
+track_uncertainty_file   track_uncertainty_track_cov_pluto200.root
+
+# EvtSelection
+#-------------------------------
+# PID (pick one)
+use_jana_pid            1
+use_bad_banana_pid      0
+
+gen_sigma0_event        0
+
+# reaction
+inclS                   1
+pKS                     0
+nKPiSig                 0
+pPPiSig                 0
+
+# event clean-up 
+check_event_header      1
+trigger_pt1             0
+trigger_pt2             0
+trigger_pt3             1
+start_hit               -1
+
+# track selection
+use_flag_Hadron         1
+use_flag_kIsUsed        1
+reject_flag_kIsLeption  1
+
+# corrections
+energy_correction       1
+beam_correction         1
+#-------------------------------
+
+# HypSelection
+#-------------------------------
+loop_resonace_search    0
+
+# event criteria (pick one)
+loop_inclusive          0 #Not implemented
+loop_pseudo_inclusice   1
+loop_exclusive200       0
+loop_exclusive201       0
+loop_exclusive203       0
+loop_exclusive240260    0
+loop_exclusive241261    0
+
+# primary particle source (pick one)
+all_positive_tracks     1
+pid_positive_tracks     0
+
+# sim track QA (does nothing for data)
+check_MC_true           0
+
+# selection cuts
+prim_particle_cuts      1
+lambda_cuts             1
+sigma_cuts              1
+
+# AnaGram 
+#-------------------------------
+ignore_FS_reco          0
+ignore_hyp_reco         0
+ignore_MC               1    
+
+# Histogram status (MC flags do nothing for data)
+hyp_reco_accepted       1
+prim_gen_MC             1 
+true_reco_MC            0
+
+# DrawHist 
+#-------------------------------
+tune_cuts               1
+frac_cut_tuning         0.96
+make_eff_corr_map       0
+
+
+# only valid if lambda bg is 
+# linear and if signal region 
+# is twice the width of each 
+# bg region 
+
+#-------------------------------
+# Sideband regions (in Hypsel) 
+#-------------------------------
+# sig region = 6 sigma wide (99.7% of signal)
+# bg region = 3 sigma each 
+# mean = 1115.6, sigma = 2.3 
+bg_low                  1101.8
+sig_low                 1108.7
+sig_high                1122.5
+bg_high                 1129.4
+
+
+#-------------------------------
+# Cut values (in Hypsel) 
+#-------------------------------
+# OLD AND NEVER TUNED CUTS
+#-------------------------------
+ff_lambda_cuts_tuned_PVA_max   0.26
+ff_lambda_cuts_tuned_lambda_point_vec_min   -7
+ff_lambda_cuts_tuned_MM_min   0.4
+ff_lambda_cuts_tuned_track_dist_max   18.73
+ff_lambda_cuts_tuned_prim_vtx_z_min   -248.88
+ff_lambda_cuts_tuned_prim_vtx_z_max   -12.42
+ff_lambda_cuts_tuned_kinfit_chi2_max   10
+ff_sigma_cuts_tuned_missing_mass_min   1161.95
+ff_sigma_cuts_tuned_vtx_dist_max   50
+fh_lambda_cuts_tuned_PVA_max   0.2
+fh_lambda_cuts_tuned_lambda_point_vec_min   -1.5
+fh_lambda_cuts_tuned_MM_min   0.3
+fh_lambda_cuts_tuned_track_dist_max   20.3
+fh_lambda_cuts_tuned_prim_vtx_z_min   -160.25
+fh_lambda_cuts_tuned_prim_vtx_z_max   -85
+fh_lambda_cuts_tuned_kinfit_chi2_max   10
+fh_sigma_cuts_tuned_missing_mass_min   1551.95
+fh_sigma_cuts_tuned_vtx_dist_max   50
+fw_track_cuts_tuned_tof_max   22
+fw_track_cuts_tuned_chi2/ndf_max   3.4
+hf_lambda_cuts_tuned_PVA_max   0.28
+hf_lambda_cuts_tuned_lambda_point_vec_min   -1
+hf_lambda_cuts_tuned_MM_min   0.4
+hf_lambda_cuts_tuned_track_dist_max   18.85
+hf_lambda_cuts_tuned_prim_vtx_z_min   -154.15
+hf_lambda_cuts_tuned_prim_vtx_z_max   -93.7
+hf_lambda_cuts_tuned_kinfit_chi2_max   10
+hf_sigma_cuts_tuned_missing_mass_min   1371.95
+hf_sigma_cuts_tuned_vtx_dist_max   50
+hh_lambda_cuts_tuned_PVA_max   0.22
+hh_lambda_cuts_tuned_lambda_point_vec_min   -1
+hh_lambda_cuts_tuned_MM_min   0.3
+hh_lambda_cuts_tuned_track_dist_max   16.83
+hh_lambda_cuts_tuned_prim_vtx_z_min   -152.24
+hh_lambda_cuts_tuned_prim_vtx_z_max   -94.6
+hh_lambda_cuts_tuned_kinfit_chi2_max   10
+hh_sigma_cuts_tuned_missing_mass_min   1521.95
+hh_sigma_cuts_tuned_vtx_dist_max   50
+prim_particle_cuts_tuned_z_min   -152.68
+prim_particle_cuts_tuned_z_max   -94.38

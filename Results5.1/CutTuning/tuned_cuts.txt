@@ -1,0 +1,95 @@
+#------------------------------------
+# Tuning cuts to 96% signal acceptance for run 5.1, smash PI 
+#------------------------------------
+evt_cuts_tuned_MM_min   0.78
+evt_cuts_tuned_MM_max   5.1
+ff_lambda_cuts_tuned_MM_min   0.45
+ff_lambda_cuts_tuned_PVA_max   0.224
+ff_lambda_cuts_tuned_kinfit_chi2_max   9.5
+ff_lambda_cuts_tuned_lambda_point_vec_min   -7.2
+ff_lambda_cuts_tuned_prim_vtx_z_min   -262.44
+ff_lambda_cuts_tuned_prim_vtx_z_max   21.64
+ff_lambda_cuts_tuned_track_dist_max   24.75
+ff_sigma_cuts_tuned_missing_mass_min   2080
+ff_sigma_cuts_tuned_vtx_dist_max   100
+fh_lambda_cuts_tuned_MM_min   0.3
+fh_lambda_cuts_tuned_PVA_max   0.248
+fh_lambda_cuts_tuned_kinfit_chi2_max   8
+fh_lambda_cuts_tuned_lambda_point_vec_min   -2.4
+fh_lambda_cuts_tuned_prim_vtx_z_min   -164.35
+fh_lambda_cuts_tuned_prim_vtx_z_max   -83.35
+fh_lambda_cuts_tuned_track_dist_max   23.85
+fh_sigma_cuts_tuned_missing_mass_min   1720
+fh_sigma_cuts_tuned_vtx_dist_max   88
+fw_track_cuts_tuned_chi2/ndf_max   0.28
+fw_track_cuts_tuned_tof_max   22
+hf_lambda_cuts_tuned_MM_min   0.4
+hf_lambda_cuts_tuned_PVA_max   0.304
+hf_lambda_cuts_tuned_kinfit_chi2_max   10.5
+hf_lambda_cuts_tuned_lambda_point_vec_min   -1.8
+hf_lambda_cuts_tuned_prim_vtx_z_min   -155.11
+hf_lambda_cuts_tuned_prim_vtx_z_max   -92.98
+hf_lambda_cuts_tuned_track_dist_max   21.15
+hf_sigma_cuts_tuned_missing_mass_min   2020
+hf_sigma_cuts_tuned_vtx_dist_max   68
+hh_lambda_cuts_tuned_MM_min   0.3
+hh_lambda_cuts_tuned_PVA_max   0.248
+hh_lambda_cuts_tuned_kinfit_chi2_max   9
+hh_lambda_cuts_tuned_lambda_point_vec_min   -1.8
+hh_lambda_cuts_tuned_prim_vtx_z_min   -152.12
+hh_lambda_cuts_tuned_prim_vtx_z_max   -94.92
+hh_lambda_cuts_tuned_track_dist_max   19.35
+hh_sigma_cuts_tuned_missing_mass_min   1700
+hh_sigma_cuts_tuned_vtx_dist_max   60
+prim_particle_cuts_tuned_z_min   -156.28
+prim_particle_cuts_tuned_z_max   -90.76
+
+
+
+
+
+------------------------------------
+Tuning cuts to maximize FoM: S/sqrt(S+B)
+------------------------------------
+evt_cuts_fomTuned_MM_min   3.72
+evt_cuts_fomTuned_MM_max   5.4
+ff_lambda_cuts_fomTuned_MM_min   0.5
+ff_lambda_cuts_fomTuned_PVA_max   0.056
+ff_lambda_cuts_fomTuned_kinfit_chi2_max   7
+ff_lambda_cuts_fomTuned_lambda_point_vec_min   3.6
+ff_lambda_cuts_fomTuned_prim_vtx_z_min   -334.52
+ff_lambda_cuts_fomTuned_prim_vtx_z_max   72.52
+ff_lambda_cuts_fomTuned_track_dist_max   36.45
+ff_sigma_cuts_fomTuned_missing_mass_min   2160
+ff_sigma_cuts_fomTuned_vtx_dist_max   174
+fh_lambda_cuts_fomTuned_MM_min   0.4
+fh_lambda_cuts_fomTuned_PVA_max   0.024
+fh_lambda_cuts_fomTuned_kinfit_chi2_max   4
+fh_lambda_cuts_fomTuned_lambda_point_vec_min   4.2
+fh_lambda_cuts_fomTuned_prim_vtx_z_min   -190
+fh_lambda_cuts_fomTuned_prim_vtx_z_max   -72.55
+fh_lambda_cuts_fomTuned_track_dist_max   44.55
+fh_sigma_cuts_fomTuned_missing_mass_min   1840
+fh_sigma_cuts_fomTuned_vtx_dist_max   108
+fw_track_cuts_fomTuned_chi2/ndf_max   3.96
+fw_track_cuts_fomTuned_tof_max   27.25
+hf_lambda_cuts_fomTuned_MM_min   0.5
+hf_lambda_cuts_fomTuned_PVA_max   0.032
+hf_lambda_cuts_fomTuned_kinfit_chi2_max   6
+hf_lambda_cuts_fomTuned_lambda_point_vec_min   3
+hf_lambda_cuts_fomTuned_prim_vtx_z_min   -169.28
+hf_lambda_cuts_fomTuned_prim_vtx_z_max   -82.08
+hf_lambda_cuts_fomTuned_track_dist_max   29.25
+hf_sigma_cuts_fomTuned_missing_mass_min   2140
+hf_sigma_cuts_fomTuned_vtx_dist_max   188
+hh_lambda_cuts_fomTuned_MM_min   0.4
+hh_lambda_cuts_fomTuned_PVA_max   0.016
+hh_lambda_cuts_fomTuned_kinfit_chi2_max   4
+hh_lambda_cuts_fomTuned_lambda_point_vec_min   4.2
+hh_lambda_cuts_fomTuned_prim_vtx_z_min   -175
+hh_lambda_cuts_fomTuned_prim_vtx_z_max   -83.48
+hh_lambda_cuts_fomTuned_track_dist_max   35.1
+hh_sigma_cuts_fomTuned_missing_mass_min   1820
+hh_sigma_cuts_fomTuned_vtx_dist_max   182
+prim_particle_cuts_fomTuned_z_min   -175
+prim_particle_cuts_fomTuned_z_max   -72.04
